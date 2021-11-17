@@ -1,4 +1,4 @@
-
+//https://stackoverflow.com/posts/27002131/revisions
 
 double integral(double(*f)(double x), double(*g)(double x, double y), double a, double b, int n)
 {
