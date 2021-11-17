@@ -1,6 +1,8 @@
 //https://stackoverflow.com/posts/27002131/revisions
-
-double integral(double(*f)(double x), double(*g)(double x, double y), double a, double b, int n)
+#pragma once
+class integrals{
+    protected:
+double definite_integral(double(*f)(double x), double(*g)(double x, double y), double a, double b, int n)
 {
     double step = (b - a)/n;   // width of rectangle
     double area = 0.0;
@@ -13,4 +15,5 @@ double integral(double(*f)(double x), double(*g)(double x, double y), double a, 
     }
 
     return area;
+}
 }
